@@ -1,0 +1,15 @@
+{
+    "section": {
+        "prefix": "",
+        "number": 0,
+        "latest": ""
+    },
+    "template": {
+        "prefix": "",
+        "number": 1,
+        "section": "",
+        "latest": "",
+        "pre-run-command": ""
+    },
+    "run-command": ""
+}
