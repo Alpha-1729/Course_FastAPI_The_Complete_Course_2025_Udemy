@@ -1,14 +1,14 @@
 {
     "section": {
         "prefix": "",
-        "number": 0,
-        "latest": ""
+        "number": 7,
+        "latest": "006-Project_2_Move_Fast_With_Fastapi"
     },
     "template": {
         "prefix": "",
-        "number": 1,
-        "section": "",
-        "latest": "",
+        "number": 19,
+        "section": "006-Project_2_Move_Fast_With_Fastapi",
+        "latest": "018-Explicit_Status_Code_Responses",
         "pre-run-command": ""
     },
     "run-command": ""
