@@ -1,7 +1,10 @@
 {
     "cSpell.words": [
+        "autoflush",
         "byauthor",
         "fastapienv",
-        "Pydantics"
+        "Pydantics",
+        "sessionmaker",
+        "Sqllite"
     ]
 }

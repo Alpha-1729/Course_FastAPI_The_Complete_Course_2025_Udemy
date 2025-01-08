@@ -1,14 +1,14 @@
 {
     "section": {
         "prefix": "",
-        "number": 7,
-        "latest": "006-Project_2_Move_Fast_With_Fastapi"
+        "number": 9,
+        "latest": "008-Setup_Database"
     },
     "template": {
         "prefix": "",
-        "number": 19,
-        "section": "006-Project_2_Move_Fast_With_Fastapi",
-        "latest": "018-Explicit_Status_Code_Responses",
+        "number": 10,
+        "section": "008-Setup_Database",
+        "latest": "009-Sqllite3_Setting_Up_Todos",
         "pre-run-command": ""
     },
     "run-command": ""
