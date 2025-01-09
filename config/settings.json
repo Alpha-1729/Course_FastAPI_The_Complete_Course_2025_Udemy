@@ -1,14 +1,14 @@
 {
     "section": {
         "prefix": "",
-        "number": 9,
-        "latest": "008-Setup_Database"
+        "number": 11,
+        "latest": "010-Authentication_And_Authorization"
     },
     "template": {
         "prefix": "",
-        "number": 10,
-        "section": "008-Setup_Database",
-        "latest": "009-Sqllite3_Setting_Up_Todos",
+        "number": 3,
+        "section": "010-Authentication_And_Authorization",
+        "latest": "002-Starting_Authentication_And_Authorization",
         "pre-run-command": ""
     },
     "run-command": ""
