@@ -6,9 +6,9 @@
     },
     "template": {
         "prefix": "",
-        "number": 12,
+        "number": 13,
         "section": "010-Authentication_And_Authorization",
-        "latest": "011-Authenticate_A_User",
+        "latest": "012-Json_Web_Token_Jwt_Overview",
         "pre-run-command": ""
     },
     "run-command": "",
