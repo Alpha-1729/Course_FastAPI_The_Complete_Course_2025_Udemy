@@ -3,6 +3,7 @@
 
 """
 >>>> Running the fastapi application.
+        uvicorn scriptName:appName --reload
         uvicorn books:app --reload
 >>>> Stopping the server.
         Ctrl + C on the terminal
