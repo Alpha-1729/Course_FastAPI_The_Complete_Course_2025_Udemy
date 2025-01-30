@@ -6,10 +6,14 @@
     },
     "template": {
         "prefix": "",
-        "number": 3,
+        "number": 12,
         "section": "010-Authentication_And_Authorization",
-        "latest": "002-Starting_Authentication_And_Authorization",
+        "latest": "011-Authenticate_A_User",
         "pre-run-command": ""
     },
-    "run-command": ""
+    "run-command": "",
+    "copy-previous": [
+        "TodoApp"
+    ],
+    "ignored-files": []
 }

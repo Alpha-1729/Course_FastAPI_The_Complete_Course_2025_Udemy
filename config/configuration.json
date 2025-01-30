@@ -48,6 +48,13 @@
             "path": "./scripts/image_renamer.py",
             "type": "python",
             "platform": "*"
+        },
+        {
+            "command": "pt",
+            "description": "Use the previous template",
+            "path": "./scripts/create_previous_template.py",
+            "type": "python",
+            "platform": "*"
         }
     ]
 }
