@@ -2,7 +2,7 @@
 # Connect Fastapi To Mysql
 
 """
->>>> pip install mysql
+>>>> pip install pymysql
 >>>>
 >>>>
 >>>>
