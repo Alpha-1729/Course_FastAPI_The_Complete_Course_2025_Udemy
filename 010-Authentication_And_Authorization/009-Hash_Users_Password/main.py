@@ -4,7 +4,7 @@
 """
 >>>> Install dependency
         pip install passlib
-        pip install bcypt==4.0.1
+        pip install bcrypt==4.0.1
 >>>>
 >>>>
 >>>>
