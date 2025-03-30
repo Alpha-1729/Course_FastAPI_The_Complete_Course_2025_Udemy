@@ -2,7 +2,7 @@
 # Post Request
 
 """
->>>> Always use double quotation mark, when adding a request body.
+>>>> Always use double quotation mark, when adding a request body in swagger or postman.
 >>>> Don't add Body to the get method.
 >>>>
 >>>>

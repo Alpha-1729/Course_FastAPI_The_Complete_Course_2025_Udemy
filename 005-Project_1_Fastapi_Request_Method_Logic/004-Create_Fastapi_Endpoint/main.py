@@ -7,8 +7,9 @@
         uvicorn books:app --reload
 >>>> Stopping the server.
         Ctrl + C on the terminal
->>>> Other ways to run the fastapi application (If you have the newest version of the fastapi application).
-
+>>>> Other ways to run the fastapi application
+        If you have the newest version of the fastapi application
+        
         First install this using pip.
             pip install "fastapi[standard]"
 
