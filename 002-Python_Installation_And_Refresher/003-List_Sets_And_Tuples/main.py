@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Sets And Tuples
+# List Sets And Tuples
 
 """
 >>>> Remove and Discard method in sets.
@@ -9,7 +9,16 @@
 >>>>
 >>>>
 """
+# Lists operations.
+my_list = [80, 96, 72, 1000]
 
+# Removing an element at a particular position.
+my_list.pop(2)  # Remove the element at the index 2.
+
+# Sorting a list.
+my_list.sort()
+
+# Set operation.
 my_set = {1, 2, 3, 4, 5, 1}
 
 my_set.discard(4)
@@ -24,5 +33,3 @@ my_set.clear()
 my_set.update([1, 2, 4])
 
 print(my_set)
-
-
