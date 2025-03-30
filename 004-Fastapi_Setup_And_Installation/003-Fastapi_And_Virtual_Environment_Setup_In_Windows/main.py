@@ -5,7 +5,7 @@
 >>>> Creating a virtual environment.
         python -m venv fastapienv
 >>>> Activating virtual environment.
-        fastapienv/Scripts/activate.bat
+        fastapienv\Scripts\activate.bat (In windows)
 >>>> List all the packages installed.
         pip list
 >>>> Installing dependencies.
@@ -14,5 +14,5 @@
 >>>> Deactivating the virtual environment.
         deactivate
 >>>> Upgrading pip.
-        pip3 install --upgrade pip
+        python -m pip install --upgrade pip
 """
