@@ -23,12 +23,12 @@ BOOKS = [
 ]
 
 
-@app.get("/books/byauthor/{author_name}")
-async def read_book_by_author(author_name: str):
+@app.get("/books/byauthor/{author}")
+async def read_book_by_author(author: str):
     books_to_return = []
 
     for book in BOOKS:
-        if book.get("author").casefold() == author_name.casefold():
+        if book.get("author").casefold() == author.casefold():
             books_to_return.append(book)
 
     return books_to_return
