@@ -21,7 +21,7 @@ def get_db():
 
 
 # Dependency injection.
-db_dependency = Annotated[Session, Depends(get_db())]
+db_dependency = Annotated[Session, Depends(get_db)]
 
 
 @app.get("/")

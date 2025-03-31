@@ -61,6 +61,13 @@ async def update_todo(db: db_dependency, todo_request: TodoRequest, todo_id: int
 
     if todo_model is None:
         raise HTTPException(status_code=404, detail="Todo not found.")
+    
+    # Code to only update given fields.
+    """
+    update_data = todo_request.model_dump(exclude_unset=True)
+    for field, value in update_data.items():
+        setattr(todo_model, field, value)
+    """
 
     todo_model.title = todo_request.title
     todo_model.description = todo_request.description
