@@ -39,6 +39,7 @@ class BookRequest(BaseModel):
     rating: int = Field(gt=-1, lt=6)
 
     # Id will not be now auto populated on the swagger.
+    # This one is an older syntax.
     # These values will be shown in the swagger as placeholder for each field.
     model_config = {
         "json_scheme_extra": {
