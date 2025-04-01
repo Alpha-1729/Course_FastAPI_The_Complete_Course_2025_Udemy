@@ -18,7 +18,7 @@ class CreateUserRequest(BaseModel):
 
 
 @router.post("/auth")
-async def get_user(create_user_request: CreateUserRequest):
+async def create_user(create_user_request: CreateUserRequest):
 
     create_user_model = Users(
         email=create_user_request.email,

@@ -45,7 +45,7 @@ def authenticate_user(username: str, password: str, db):
 
 
 @router.post("/auth", status_code=status.HTTP_201_CREATED)
-async def get_user(db: db_dependency, create_user_request: CreateUserRequest):
+async def create_user(db: db_dependency, create_user_request: CreateUserRequest):
 
     create_user_model = Users(
         email=create_user_request.email,
