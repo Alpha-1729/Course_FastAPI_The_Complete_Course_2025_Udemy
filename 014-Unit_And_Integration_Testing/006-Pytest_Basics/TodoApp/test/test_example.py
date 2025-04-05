@@ -18,6 +18,11 @@ def test_type():
     assert type("World" is not int)
 
 
+def test_greater_and_less_than():
+    assert 7 > 3
+    assert 4 < 10
+
+
 def test_list():
     num_list = [1, 2, 3, 4]
     any_list = [False, False]
