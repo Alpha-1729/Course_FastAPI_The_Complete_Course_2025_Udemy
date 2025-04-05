@@ -48,8 +48,8 @@ async def read_todo(
 
     todo_model = (
         db.query(Todos)
-        .filter(Todos.owner_id == user.get("id"))
         .filter(todo_id == Todos.id)
+        .filter(Todos.owner_id == user.get("id"))
         .first()
     )
     if todo_model is not None:

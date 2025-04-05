@@ -27,7 +27,7 @@ user_dependency = Annotated[dict, Depends(get_current_user)]
 class TodoRequest(BaseModel):
     title: str = Field(min_len=3)
     description: str = Field(min_len=3, max_len=100)
-    priority: int = Field(gt=0, lt=6)
+    priority: int = Field(gt=0, lt=6) 
     complete: bool
 
 
