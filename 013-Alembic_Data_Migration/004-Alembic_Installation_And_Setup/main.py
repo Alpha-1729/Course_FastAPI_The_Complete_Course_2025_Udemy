@@ -2,7 +2,7 @@
 # Alembic Installation And Setup
 
 """
->>>> alembic init alembic
+>>>> alembic init alembic(last one is the alembic environment name)
 >>>>
 >>>>
 >>>>
