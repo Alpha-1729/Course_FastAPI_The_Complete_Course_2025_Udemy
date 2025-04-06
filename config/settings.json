@@ -6,9 +6,9 @@
     },
     "template": {
         "prefix": "",
-        "number": 20,
+        "number": 27,
         "section": "014-Unit_And_Integration_Testing",
-        "latest": "019-Fastapi_Project_Test_5",
+        "latest": "026-Fastapi_Project_Test_12",
         "pre-run-command": ""
     },
     "run-command": "",
