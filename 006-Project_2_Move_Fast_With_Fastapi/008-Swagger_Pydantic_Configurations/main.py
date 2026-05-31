@@ -8,7 +8,6 @@
 >>>>
 """
 
-
 from fastapi import FastAPI
 from typing import Optional
 from pydantic import BaseModel, Field
@@ -32,7 +31,9 @@ class Book:
 
 
 class BookRequest(BaseModel):
-    id: Optional[int] = Field(description="Id is not needed on create", default=None, exclude=True)
+    id: Optional[int] = Field(
+        description="Id is not needed on create", default=None, exclude=True
+    )
     title: str = Field(min_length=3)
     author: str = Field(min_length=1)
     description: str = Field(min_length=1, max_length=100)
@@ -42,7 +43,7 @@ class BookRequest(BaseModel):
     # This one is an older syntax.
     # These values will be shown in the swagger as placeholder for each field.
     model_config = {
-        "json_scheme_extra": {
+        "json_schema_extra": {
             "example": {
                 "title": "A new book",
                 "author": "test author",

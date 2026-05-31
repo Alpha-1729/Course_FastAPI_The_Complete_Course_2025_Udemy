@@ -2,7 +2,7 @@
 # Path Parameter
 
 """
->>>> The space character is replaced with %20 to ensure the URL remains valid
+>>>> The space character is replaced with %20 to ensure the URL remains valid.
 >>>>
 >>>>
 >>>>

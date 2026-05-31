@@ -10,13 +10,11 @@
 
 user_info = {"username": "sam", "age": 10, "hobby": "carpenter"}
 
-# Remove a key safely, returning None if it doesn't exist
-user_info.pop("username", None)
+user_info["married"] = True  # Add a new key
+user_info.pop("username", None)  # Remove safely (no error if missing)
+del user_info["age"]  # Remove directly (raises error if missing)
 
-# Alternative way to remove a key
-del user_info["age"]
+copied_dict = user_info.copy()  # Copy before clearing
+user_info.clear()  # Empty the dictionary
 
-# Create a copy of the dictionary
-copied_dict = user_info.copy()
-print(copied_dict)
-
+print(copied_dict)  # {'hobby': 'carpenter', 'married': True}

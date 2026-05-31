@@ -2,34 +2,30 @@
 # List Sets And Tuples
 
 """
->>>> Remove and Discard method in sets.
-        The discard() method removes the specified item from the set.
-        This method is different from the remove() method, because the remove() method will raise an error if the specified item does not exist, and the discard() method will not.
+>>>> Key Notes:
+        - discard() removes an element from a set WITHOUT raising an error if missing.
+        - remove() raises a KeyError if the element does not exist.
 >>>>
 >>>>
 >>>>
 """
-# Lists operations.
+
+# List operation.
 my_list = [80, 96, 72, 1000]
 
-# Removing an element at a particular position.
-my_list.pop(2)  # Remove the element at the index 2.
+my_list.pop(2)  # Removes element at index 2 → removes 72
+my_list.sort()  # Sorts in ascending order → [80, 96, 1000]
 
-# Sorting a list.
-my_list.sort()
+print(my_list)
 
 # Set operation.
-my_set = {1, 2, 3, 4, 5, 1}
+my_set = {1, 2, 3, 4, 5}  # Duplicates are ignored in sets
 
-my_set.discard(4)
+my_set.discard(4)  # Removes 4 → no error if missing
+my_set.discard(10)  # 10 doesn't exist → no error (unlike remove())
 
-# This will not raise an error.
-my_set.discard(10)
+my_set.clear()  # Empties the set → set()
 
-# Removing all elements from sets.
-my_set.clear()
-
-# Adding more than one elements.
-my_set.update([1, 2, 4])
+my_set.update([1, 2, 4])  # Adds multiple elements at once
 
 print(my_set)

@@ -1,14 +1,14 @@
 {
     "section": {
         "prefix": "",
-        "number": 15,
-        "latest": "014-Unit_And_Integration_Testing"
+        "number": 16,
+        "latest": "015-Project_5_Full_Stack_Application"
     },
     "template": {
         "prefix": "",
-        "number": 27,
-        "section": "014-Unit_And_Integration_Testing",
-        "latest": "026-Fastapi_Project_Test_12",
+        "number": 10,
+        "section": "015-Project_5_Full_Stack_Application",
+        "latest": "009-Layout_Page_Inheritance",
         "pre-run-command": ""
     },
     "run-command": "",

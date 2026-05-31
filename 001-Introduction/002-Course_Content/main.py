@@ -2,7 +2,7 @@
 # Course Content
 
 """
->>>> All the course slide has been added in the Resource folder.
+>>>> All the course slide has been added in the Resources folder.
 >>>>
 >>>>
 >>>>
