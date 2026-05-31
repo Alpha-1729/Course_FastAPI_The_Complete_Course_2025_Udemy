@@ -27,8 +27,8 @@ db_dependency = Annotated[Session, Depends(get_db)]
 
 
 class TodoRequest(BaseModel):
-    title: str = Field(min_len=3)
-    description: str = Field(min_len=3, max_len=100)
+    title: str = Field(min_length=3)
+    description: str = Field(min_length=3, max_length=100)
     priority: int = Field(gt=0, lt=6)
     complete: bool
 
@@ -61,7 +61,7 @@ async def update_todo(db: db_dependency, todo_request: TodoRequest, todo_id: int
 
     if todo_model is None:
         raise HTTPException(status_code=404, detail="Todo not found.")
-    
+
     # Code to only update given fields.
     """
     update_data = todo_request.model_dump(exclude_unset=True)

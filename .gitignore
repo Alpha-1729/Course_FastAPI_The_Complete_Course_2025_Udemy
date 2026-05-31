@@ -178,3 +178,4 @@ pyrightconfig.json
 **/todos.db
 **/todosapp.db
 **/testdb.db
+**/*.db

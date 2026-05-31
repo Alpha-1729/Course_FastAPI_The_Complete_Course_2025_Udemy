@@ -7,10 +7,10 @@
 
         Listing all the tables.
             .schema
-        
+
         Inserting a record.
             INSERT INTO todos (title, description, priority, complete) VALUES('Go to store', 'Pick up eggs', 5, False);
-        
+
         Selecting all records.
             SELECT * FROM todos;
 

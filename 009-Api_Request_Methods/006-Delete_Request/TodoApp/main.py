@@ -27,8 +27,8 @@ db_dependency = Annotated[Session, Depends(get_db)]
 
 
 class TodoRequest(BaseModel):
-    title: str = Field(min_len=3)
-    description: str = Field(min_len=3, max_len=100)
+    title: str = Field(min_length=3)
+    description: str = Field(min_length=3, max_length=100)
     priority: int = Field(gt=0, lt=6)
     complete: bool
 
@@ -70,13 +70,13 @@ async def update_todo(db: db_dependency, todo_request: TodoRequest, todo_id: int
     db.add(todo_model)
     db.commit()
 
+
 @app.delete("/todo/{todo_id}", status_code=status.HTTP_204_NO_CONTENT)
-async def delete_todo(db:db_dependency, todo_id: int = Path(gt=0)):
+async def delete_todo(db: db_dependency, todo_id: int = Path(gt=0)):
     todo_model = db.query(Todos).filter(todo_id == Todos.id).first()
 
     if todo_model is None:
-        raise HTTPException(status_code=404, detail='Todo not found')
+        raise HTTPException(status_code=404, detail="Todo not found")
 
     db.query(Todos).filter(todo_id == Todos.id).delete()
     db.commit()
-
